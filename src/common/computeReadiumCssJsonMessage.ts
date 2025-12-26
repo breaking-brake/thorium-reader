@@ -46,7 +46,7 @@ export const computeReadiumCssJsonMessage = (settings: ReaderConfig): IEventPayl
 
         // ReadiumCSS hack to enforce links and headings
         night: settings.night && !settings.theme || settings.theme !== "neutral"
-            && (settings.theme === "night" || settings.theme === "contrast1" || settings.theme === "contrast2" || settings.theme === "contrast3"),
+            && (settings.theme === "night" || settings.theme === "contrast1" || settings.theme === "contrast2" || settings.theme === "contrast3" || settings.theme === "midnight"),
         sepia: settings.sepia && !settings.theme || settings.theme !== "neutral"
         && (settings.theme === "sepia" || settings.theme === "paper" || settings.theme === "contrast4"),
 
@@ -58,6 +58,7 @@ export const computeReadiumCssJsonMessage = (settings: ReaderConfig): IEventPayl
             settings.theme === "contrast2" ? "#000000" :
             settings.theme === "contrast3" ? "#181842" :
             settings.theme === "contrast4" ? "#C5E7CD" :
+            settings.theme === "midnight" ? "#0D223A" :
             readiumCSSDefaults.backgroundColor,
         textColor: (!settings.theme || settings.theme === "neutral") ? readiumCSSDefaults.textColor :
             settings.theme === "sepia" ? "black" :
@@ -67,6 +68,7 @@ export const computeReadiumCssJsonMessage = (settings: ReaderConfig): IEventPayl
             settings.theme === "contrast2" ? "#FFFF00" :
             settings.theme === "contrast3" ? "#FFFF" :
             settings.theme === "contrast4" ? "#000000" :
+            settings.theme === "midnight" ? "#C2E1F2" :
             readiumCSSDefaults.textColor,
 
         selectionBackgroundColor: (!settings.theme || settings.theme === "neutral") ? readiumCSSDefaults.selectionBackgroundColor :
@@ -77,6 +79,7 @@ export const computeReadiumCssJsonMessage = (settings: ReaderConfig): IEventPayl
             settings.theme === "contrast2" ? "rgb(100, 122, 177)" :
             settings.theme === "contrast3" ? "rgb(100, 122, 177)" :
             settings.theme === "contrast4" ? "rgb(155, 179, 240)" :
+            settings.theme === "midnight" ? "rgb(100, 122, 177)" :
             readiumCSSDefaults.selectionBackgroundColor,
         selectionTextColor: (!settings.theme || settings.theme === "neutral") ? readiumCSSDefaults.selectionTextColor :
             settings.theme === "sepia" ? "inherit" :
@@ -86,15 +89,18 @@ export const computeReadiumCssJsonMessage = (settings: ReaderConfig): IEventPayl
             settings.theme === "contrast2" ? "inherit" :
             settings.theme === "contrast3" ? "inherit" :
             settings.theme === "contrast4" ? "inherit" :
+            settings.theme === "midnight" ? "inherit" :
             readiumCSSDefaults.selectionTextColor,
 
         linkColor: (!settings.theme || settings.theme === "neutral") ? readiumCSSDefaults.linkColor :
             settings.theme === "sepia" ? readiumCSSDefaults.linkColor :
             settings.theme === "night" ? readiumCSSDefaults.linkColor :
+            settings.theme === "midnight" ? "#82AAFF" :
             "#0000EE",
         linkVisitedColor: (!settings.theme || settings.theme === "neutral") ? readiumCSSDefaults.linkVisitedColor :
             settings.theme === "sepia" ? readiumCSSDefaults.linkVisitedColor :
             settings.theme === "night" ? readiumCSSDefaults.linkVisitedColor :
+            settings.theme === "midnight" ? "#6690E6" :
             "#551A8B", // never seems to work in ReadiumCSS
 
         textAlign: settings.align === textAlignEnum.left ? textAlignEnum.left :

@@ -919,6 +919,7 @@ class Reader extends React.Component<IProps, IState> {
                 this.props.readerConfig.theme === "contrast3" ? stylesReader.contrast3Mode :
                 this.props.readerConfig.theme === "contrast4" ? stylesReader.contrast4Mode :
                 this.props.readerConfig.theme === "paper" ? stylesReader.paperMode :
+                this.props.readerConfig.theme === "midnight" ? stylesReader.midnightMode :
                 "",
             )}>
                 {/* Reader Lock DEMO !!! */}

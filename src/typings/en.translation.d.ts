@@ -1815,6 +1815,7 @@ declare namespace typed_i18n {
         readonly "Contrast2": string,
         readonly "Contrast3": string,
         readonly "Contrast4": string,
+        readonly "Midnight": string,
         readonly "Neutral": string,
         readonly "Night": string,
         readonly "Paper": string,
@@ -2208,6 +2209,7 @@ declare namespace typed_i18n {
       readonly "Contrast2": string,
       readonly "Contrast3": string,
       readonly "Contrast4": string,
+      readonly "Midnight": string,
       readonly "Neutral": string,
       readonly "Night": string,
       readonly "Paper": string,
@@ -2310,6 +2312,7 @@ declare namespace typed_i18n {
     readonly "Contrast2": string,
     readonly "Contrast3": string,
     readonly "Contrast4": string,
+    readonly "Midnight": string,
     readonly "Neutral": string,
     readonly "Night": string,
     readonly "Paper": string,
@@ -2322,6 +2325,7 @@ declare namespace typed_i18n {
   readonly "Contrast2": string,
   readonly "Contrast3": string,
   readonly "Contrast4": string,
+  readonly "Midnight": string,
   readonly "Neutral": string,
   readonly "Night": string,
   readonly "Paper": string,
@@ -2331,6 +2335,7 @@ declare namespace typed_i18n {
   (_: "reader.settings.theme.name.Contrast2", __?: {}): string;
   (_: "reader.settings.theme.name.Contrast3", __?: {}): string;
   (_: "reader.settings.theme.name.Contrast4", __?: {}): string;
+  (_: "reader.settings.theme.name.Midnight", __?: {}): string;
   (_: "reader.settings.theme.name.Neutral", __?: {}): string;
   (_: "reader.settings.theme.name.Night", __?: {}): string;
   (_: "reader.settings.theme.name.Paper", __?: {}): string;

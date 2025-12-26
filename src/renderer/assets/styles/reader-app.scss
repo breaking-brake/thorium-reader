@@ -126,6 +126,16 @@
   --reader-menuPartTitleHoverColor: #1c1c1c;
 }
 
+.midnightMode {
+  --reader-mainColor: #0D223A;
+  --reader-secondaryColor: #0D223A;
+  --color-text-reader: #C2E1F2;
+  --reader-separatorColor: #3a5070;
+  --reader-menuPartColor: #152840;
+  --reader-menuPartTitleColor: #0a1525;
+  --reader-menuPartTitleHoverColor: #1a3050;
+}
+
 body {
   margin: 0;
   padding: 0;

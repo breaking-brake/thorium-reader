@@ -176,6 +176,12 @@ const Theme = ({ dockedMode }: { dockedMode: boolean }) => {
             value: "contrast4",
             style: { backgroundColor: "#C5E7CD", color: "#000000" },
         },
+        {
+            id: 9,
+            name: `${__("reader.settings.theme.name.Midnight")}`,
+            value: "midnight",
+            style: { backgroundColor: "#0D223A", color: "#C2E1F2" },
+        },
     ]);
 
 
@@ -188,7 +194,8 @@ const Theme = ({ dockedMode }: { dockedMode: boolean }) => {
                             : theme === "contrast2" ? 6
                                 : theme === "contrast3" ? 7
                                     : theme === "contrast4" ? 8
-                                        : 1;
+                                        : theme === "midnight" ? 9
+                                            : 1;
 
     return (
         <section className={stylesSettings.section}>
