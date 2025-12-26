@@ -57,6 +57,7 @@ export declare const menu_background: string;
 export declare const menu_button: string;
 export declare const menu_option: string;
 export declare const menu_section_svg: string;
+export declare const midnightMode: string;
 export declare const my_combobox_container: string;
 export declare const nightMode: string;
 export declare const noAudio: string;
